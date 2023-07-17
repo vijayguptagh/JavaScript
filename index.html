@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+</head>
+<body onload="alert('hello');"> <!-- inline js -->
+<form><fieldset>      
+    <h3>Welcome to JavaScript Tutorial :- </h3>
+    <div class="c1" id="cid1">
+        <button name='b' id="bid1" class='btn' value="clickhere" onclick='clickFunction()'>Click Here</button>
+        <!-- <input type="button" name='b' id="bid1" class='btn' value="clickhere" onclick='clickFunction()'> -->
+        <p>paragraph tag example.</p>
+    </div>
+</fieldset>
+<fieldset>   
+    <div class="c1" id="cid2">
+        <p name="p1" id="pid1">this is example.</p>
+    </div>
+</fieldset>
+<fieldset>
+    <div class="c3" id="cid3">
+        <p name="p2" id="pid2">Current Date & Time is - </p>
+        <p class="p3" id="pid3"></p>
+    </div>
+</fieldset>
+
+<script> //prints on console. //internaL js
+    // alert("popup message"); //it gives a popup on screen whenever page loads. 
+    console.log("this is javascript.",4-2);//prints on console. 
+    document.write("a writing method");//prints on user screen,not on console.
+    console.warn("Example of warning message"); //in yellow color. 
+    console.error("Example of Error message"); //in red color. 
+    //console.clear()=it clears console screen. 
+    console.assert("4-2=4"); //if true then passes else shows error.
+    //document.getElementById('pid2').innerHTML='hi this is vijay' 
+    //through this way & query selector-only we can access html var.
+</script>
+
+    <!-- 8]JS & CSS File links-to create seperate js,css files. -->
+    <script src="file.js"></script>
+    
+<!-- css to hide button -->
+<style>
+    .hide{
+        visibility:hidden;
+    }
+</style>
+<!-- at console perform the following js - to hide button -->
+<!-- document.querySelector('button').classList; = this will return array of class values to corresponding element - since classslist is property not method so no ()
+    document.querySelector('button').classList.add('hide'); = this will add a class hide to this element-which css code we have written  -->
+
+<!--document.querySelector('button').classList.remove('hide');=it removes this class from element
+document.querySelector('button').classList.toggle('hide');  = toggles class-->
+
+</form></body>
+</html>
